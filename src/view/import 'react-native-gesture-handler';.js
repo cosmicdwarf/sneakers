@@ -13,19 +13,19 @@ import LogIn from './src/view/screens/LogIn';
 import { StatusBar } from 'react-native';
 
 const App = () => {
-  return (
-    <NavigationContainer>
-      <StatusBar barStyle="dark-content" backgroundColor={'white'} />
-      <Stack.Navigator screenOptions={{ header: () => null }}>
-        <Stack.Screen name="Home" component={HomeScreen} />
-        <Stack.Screen name="Details" component={DetailsSceeen} />
-        <Stack.Screen name="Bag" component={BagScreen} />
-        <Stack.Screen name="Account" component={AccountScreen} />
-        <Stack.Screen name="Bookmark" component={BookmarkScreen} />
-        <Stack.Screen name="LogIn" component={LogIn} />
-      </Stack.Navigator>
-    </NavigationContainer>
-  );
+    return (
+        <NavigationContainer>
+            <StatusBar barStyle="dark-content" backgroundColor={'white'} />
+            <Stack.Navigator screenOptions={{ header: () => null }}>
+                <Stack.Screen name="Home" component={HomeScreen} />
+                <Stack.Screen name="Details" component={DetailsSceeen} />
+                <Stack.Screen name="Bag" component={BagScreen} />
+                <Stack.Screen name="Account" component={AccountScreen} />
+                <Stack.Screen name="Bookmark" component={BookmarkScreen} />
+                <Stack.Screen name="LogIn" component={LogIn} />
+            </Stack.Navigator>
+        </NavigationContainer>
+    );
 };
 
 export default App;
